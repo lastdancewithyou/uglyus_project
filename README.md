@@ -1,6 +1,13 @@
 # uglyus_project
 어글리어스 기업과 함께하는 프로젝트
+
 회사 홈페이지 : https://uglyus.co.kr/main
+
+## 주제
+
+1. 
+
+2. 
 
 ## 주요 라이브러리
 

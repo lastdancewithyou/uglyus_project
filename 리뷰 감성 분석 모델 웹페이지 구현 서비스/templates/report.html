@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='report_styles.css') }}">
+    <title>Period Report</title>
+</head>
+<body>
+    <div>
+        <h1>UglyUs Weekly Trend Report</h1>
+    </div>
+    <div class="container">
+        <div class="board">
+            <div class="left-column">
+                <p>분석 기간의 시작일(주차): {{start_date}}</p>
+                <p>분석 기간의 종료일(주차): {{end_date}}</p>
+                <h2><분석 결과></h2>
+                <p>{{review_count_message}}</p>
+                <p>{{score_message}}</p>
+                <p>{{ratio_message}}</p>
+                <p>{{rank_message}}</p>
+                <h2>Sentimental Score Highest 5 reviews</h2>
+                {% for index, row in top_reviews.iterrows() %}
+                    <p>{{ loop.index }}. {{ row['document'] }} - {{ row['modified_score'] }}점</p>
+                {% endfor %}
+                <h2>Sentimental Score Lowest 5 reviews</h2>
+                {% for index, row in lowest_reviews.iterrows() %}
+                    <p>{{ loop.index }}. {{ row['document'] }} - {{ row['modified_score'] }}점</p>
+                {% endfor %}
+            </div>
+            <div class="right-column">
+                <img  class = "chart_image" src="{{ url_for('static', filename='output_plot.png') }}" alt="Report Chart">
+            </div>
+        </div>
+        <div class="box">
+            <p class="guide-title">Chart Guideline</p>
+            <p class="chart">첫 번째 차트</p>
+            <p>검색 기간 포함 최근 감성 점수 추이</p> 
+            <br>
+            <p class="chart">두 번째 차트</p>
+            <p>검색 기간 토픽별 감성 점수 계산</p>
+            <br>
+            <p class="chart">세 번째 차트</p>
+            <p>검색 기간 대비 동일한 직전 기간 동안과 토픽별 점수 비교 및 변화량 계산</p>
+            <p>(예시)</p>
+            <p>2022-10-10, 2022-10-15 입력 시, 비교 대상 기간은 2022-10-04 ~ 2022-10-09</p>
+            <br>
+            <p class="chart">토픽 점수 산출 방법</p>
+            <p>(긍정 리뷰 개수 - 부정 리뷰 개수 * 13.5) / (긍정 리뷰 개수 + 부정 리뷰 개수)</p>
+            <table class="table">
+                <tr>
+                    <th scope="col">라벨명</th>
+                    <th scope="col">토픽명</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>포장 & 친환경</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>주문 & 상태</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>배송 & 이유식</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>요리 & 레시피</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>품목 구성</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

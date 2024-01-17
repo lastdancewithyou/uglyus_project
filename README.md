@@ -19,7 +19,7 @@
 
 **2. 보고서 형태로 분석 결과가 출력되는 report 페이지**
 
-<img width="60%" alt="스크린샷 2024-01-14 오후 7 45 34" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/2b332c36-6639-4644-81a6-0db601d36750">
+<img width="60%" alt="스크린샷 2024-01-18 오전 12 23 49" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/59be43c4-73d5-46c5-a2cd-f1e52d63a528">
 
 
 ## 주요 라이브러리

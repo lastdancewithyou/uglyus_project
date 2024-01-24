@@ -15,12 +15,15 @@
 
 **1. 데이터 업로드와 분석 옵션 선택(Daily, Weekly)이 가능한 기본 페이지**
 
-<img width="60%" alt="스크린샷 2024-01-11 오후 8 59 03" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/6d59fcf1-a538-4976-a933-a03f14680088">
+<img width="60%" alt="input" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/e4915b93-4cbc-4155-aa25-4607a052e074">
 
 **2. 보고서 형태로 분석 결과가 출력되는 report 페이지**
 
-<img width="60%" alt="스크린샷 2024-01-18 오전 12 23 49" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/59be43c4-73d5-46c5-a2cd-f1e52d63a528">
+<img width="60%" alt="output" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/f58cec0e-93d1-4f6a-9fda-2ce1f21e7efb">
 
+**웹페이지 시연 영상**
+
+[![Video Label](http://img.youtube.com/vi/_NUtdNgKOEI/0.jpg)](https://youtu.be/_NUtdNgKOEI)
 
 ## 주요 라이브러리
 

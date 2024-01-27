@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('.model_connect/font/NanumSquareNeo-Variable.woff') format('woff');
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #FEF8ED;
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+.font {
+    color: white;
+    font-weight: bold;
+    font-size:70px;
+}
+
+.font_se {
+    font-size : 20px;
+    font-weight:normal;
+    color: white;
+}
+
+.datepicker {
+    margin-right: 20px;
+}
+
+.form-group {
+    margin-bottom:20px;
+}
+
+.btn-submit {
+    margin-top:20px;    
+}
+
+.dateLabel {
+    width : 100%;
+    text-align: center;
+}
+
+.buttonArea {
+    width : 100%;
+    text-align: center;
+}
+
+.box{
+    margin-bottom : 50px;
+}
+
+.btn-primary{
+    background-color: hsl(16, 100%, 45%);
+    border-color: hsl(16, 100%, 30%);
+    width:245px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bg{
+    background-color: #FF5500;
+    width:90%;
+    height: 90%;
+    margin: 50px auto;
+    color: white;
+    padding: 30px;
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.width {
+    width: 70px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.wm1{
+    margin-right:11px;
+}
+.wm2{
+    margin-right:18px;
+}
+.ym1{
+    margin-right:18px;
+}
+.ym2{
+    margin-right:25px;
+}
+
+.upload_box{
+    border: 2px solid white;
+    text-align: center;
+    margin-bottom:15px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.upload_button{
+    margin-bottom:10px;
+}
+
+.upb_margin{
+    margin-bottom:10px;
+}

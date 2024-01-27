@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uglyus Weekly Trend Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index_styles.css') }}">
+</head>
+
+<body>
+    <div class="container box bg">
+        <div class="text-center">
+            <span class="font">UglyUs Weekly Trend Report</span>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div></div>
+            <div class="col-md-3">
+                <p class="upload_box">파일 업로드가 완료되었습니다.</p>
+                <form action="/report" method="POST">
+                    <div>
+                        <label for="report_type">Report Type:</label>
+                        <select id="report_type" name="report_type">
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                        </select>
+                    </div>               
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="start_date" class="dateLabel font_se">Start Date</label>
+                                <input type="text" class="form-control datepicker" id="start_date" name="start_date" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="end_date" class = "dateLabel font_se">End Date</label>
+                                <input type="text" class="form-control datepicker" id="end_date" name="end_date" required>
+                            </div>
+                        </div>
+                    <div>
+                        <label for="start_year" Class="ym1">Start Year:</label>
+                        <select id="start_year" Class="width" name="start_year">
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
+
+                        <br>
+                        
+                        <label for="start_week" class="wm1">Start Week:</label>
+                        <select id="start_week" class = "width" name="start_week">
+                            <option value="01">1주차</option>
+                            <option value="02">2주차</option>
+                            <option value="03">3주차</option>
+                            <option value="04">4주차</option>
+                            <option value="05">5주차</option>
+                            <option value="06">6주차</option>
+                            <option value="07">7주차</option>
+                            <option value="08">8주차</option>
+                            <option value="09">9주차</option>
+                            <option value="10">10주차</option>
+                            <option value="11">11주차</option>
+                            <option value="12">12주차</option>
+                            <option value="13">13주차</option>
+                            <option value="14">14주차</option>
+                            <option value="15">15주차</option>
+                            <option value="16">16주차</option>
+                            <option value="17">17주차</option>
+                            <option value="18">18주차</option>
+                            <option value="19">19주차</option>
+                            <option value="20">20주차</option>
+                            <option value="21">21주차</option>
+                            <option value="22">22주차</option>
+                            <option value="23">23주차</option>
+                            <option value="24">24주차</option>
+                            <option value="25">25주차</option>
+                            <option value="26">26주차</option>
+                            <option value="27">27주차</option>
+                            <option value="28">28주차</option>
+                            <option value="29">29주차</option>
+                            <option value="30">30주차</option>
+                            <option value="31">31주차</option>
+                            <option value="32">32주차</option>
+                            <option value="33">33주차</option>
+                            <option value="34">34주차</option>
+                            <option value="35">35주차</option>
+                            <option value="36">36주차</option>
+                            <option value="37">37주차</option>
+                            <option value="38">38주차</option>
+                            <option value="39">39주차</option>
+                            <option value="40">40주차</option>
+                            <option value="41">41주차</option>
+                            <option value="42">42주차</option>
+                            <option value="43">43주차</option>
+                            <option value="44">44주차</option>
+                            <option value="45">45주차</option>
+                            <option value="46">46주차</option>
+                            <option value="47">47주차</option>
+                            <option value="48">48주차</option>
+                            <option value="49">49주차</option>
+                            <option value="50">50주차</option>
+                            <option value="51">51주차</option>
+                            <option value="52">52주차</option>
+                            <option value="53">53주차</option>
+                        </select>
+                        
+                        <br>
+
+                         <label for="end_year" Class="ym2">End Year:</label>
+                         <select id="end_year" Class="width" name="end_year">
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
+                    
+                    <br>
+
+                        <label for="end_week" Class="wm2">End Week:</label>
+                        <select id="end_week" class = "width" name="end_week">
+                            <option value="01">1주차</option>
+                            <option value="02">2주차</option>
+                            <option value="03">3주차</option>
+                            <option value="04">4주차</option>
+                            <option value="05">5주차</option>
+                            <option value="06">6주차</option>
+                            <option value="07">7주차</option>
+                            <option value="08">8주차</option>
+                            <option value="09">9주차</option>
+                            <option value="10">10주차</option>
+                            <option value="11">11주차</option>
+                            <option value="12">12주차</option>
+                            <option value="13">13주차</option>
+                            <option value="14">14주차</option>
+                            <option value="15">15주차</option>
+                            <option value="16">16주차</option>
+                            <option value="17">17주차</option>
+                            <option value="18">18주차</option>
+                            <option value="19">19주차</option>
+                            <option value="20">20주차</option>
+                            <option value="21">21주차</option>
+                            <option value="22">22주차</option>
+                            <option value="23">23주차</option>
+                            <option value="24">24주차</option>
+                            <option value="25">25주차</option>
+                            <option value="26">26주차</option>
+                            <option value="27">27주차</option>
+                            <option value="28">28주차</option>
+                            <option value="29">29주차</option>
+                            <option value="30">30주차</option>
+                            <option value="31">31주차</option>
+                            <option value="32">32주차</option>
+                            <option value="33">33주차</option>
+                            <option value="34">34주차</option>
+                            <option value="35">35주차</option>
+                            <option value="36">36주차</option>
+                            <option value="37">37주차</option>
+                            <option value="38">38주차</option>
+                            <option value="39">39주차</option>
+                            <option value="40">40주차</option>
+                            <option value="41">41주차</option>
+                            <option value="42">42주차</option>
+                            <option value="43">43주차</option>
+                            <option value="44">44주차</option>
+                            <option value="45">45주차</option>
+                            <option value="46">46주차</option>
+                            <option value="47">47주차</option>
+                            <option value="48">48주차</option>
+                            <option value="49">49주차</option>
+                            <option value="50">50주차</option>
+                            <option value="51">51주차</option>
+                            <option value="52">52주차</option>
+                            <option value="53">53주차</option>
+                        </select>
+                    <div class="buttonArea">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+        });
+        
+        $(document).ready(function () {
+            disableWeekly();
+            $('#report_type').on('change', function () {
+                if ($(this).val() === 'daily') {
+                    disableWeekly();
+                } else if ($(this).val() === 'weekly') {
+                    disableDaily();
+                }
+            });
+
+            function disableDaily() {
+                $('#start_date, #end_date').prop('disabled', true);
+                $('#start_year, #end_year, #start_week, #end_week').prop('disabled', false);
+            }
+
+            function disableWeekly() {
+                $('#start_year, #end_year, #start_week, #end_week').prop('disabled', true);
+                $('#start_date, #end_date').prop('disabled', false);
+            }
+            });
+
+    </script>
+</body>
+
+</html>

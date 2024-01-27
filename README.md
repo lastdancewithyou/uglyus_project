@@ -5,25 +5,38 @@
 
 ## 주제
 
-1. 
+1. 태블로를 활용한 데이터로 보는 2023 어글리어스 대시보드
+- 기업의 홍보를 위한 대시보드를 제안, 홈페이지에 임베드하는 방식으로 활용할 수 있도록 대시보드를 제작함 
 
 2. 어글리어스 리뷰를 활용한 ELECTRA 기반 감성 분석 모델 구축 및 웹페이지 구현
-- 파이썬 웹 프레임워크인 Flask를 통해 웹페이지를 구현했다. 모델의 input을 웹페이지 상에서 선택하고, output으로 나온 결과를 보고서 형태로 출력한다.
-- 코딩을 모르는 기업의 마케터, 그로스해커들도 간편한 UI로 구성된 웹페이지에 새로운 데이터를 업로드하기만 하면 서비스를 편리하게 활용할 수 있으며, 기존에 방치되어 있던 리뷰들을 적극적으로 활용할 수 있다.
-- 감성 점수를 통해 어글리어스 구독자 및 구매자들의 기업에 대한 실시간 민심을 읽을 수 있고, 토픽별 긍부정 현황을 한눈에 파악할 수 있다.
+- 파이썬 웹 프레임워크인 Flask를 통해 웹페이지를 구현했다. 모델의 input을 웹페이지 상에서 선택하고, output으로 나온 결과를 html 상에 보고서 형태로 출력된다.
+- 직접 제작한 지수(토픽 감성 지수)를 활용하여 리뷰를 통한 기업 평가 지표를 만듦
+- LDA 토픽 모델링을 수행, 토픽별로 토픽 감성 지수를 파악할 수 있기에 모든 리뷰를 확인하지 않고 해당 토픽의 세부적인 리뷰만 확인하면 됨 -> Customer Service 팀의 업무의 자동화 실천
+- 코딩을 모르는 기업의 마케터, CS팀도 간편한 UI로 구성된 웹페이지에 새로운 데이터를 업로드, 기간을 입력하기만 하면 자연어 기반 AI 분석 서비스를 이용할 수 있다.
+- 
 <br/>
 
-**1. 데이터 업로드와 분석 옵션 선택(Daily, Weekly)이 가능한 기본 페이지**
+**1. Workflow**
+
+<img width="60%" alt="워크플로우" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/f01e0d5e-a688-4c10-893e-b546015422d8">
+
+**2. 데이터 업로드와 분석 옵션 선택(Daily, Weekly)이 가능한 Main Page**
 
 <img width="60%" alt="input" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/e4915b93-4cbc-4155-aa25-4607a052e074">
 
-**2. 보고서 형태로 분석 결과가 출력되는 report 페이지**
+**3. 보고서 형태로 분석 결과가 출력되는 Report Page**
 
 <img width="60%" alt="output" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/f58cec0e-93d1-4f6a-9fda-2ce1f21e7efb">
 
-**웹페이지 시연 영상**
+## 시연영상
 
-[![Video Label](http://img.youtube.com/vi/_NUtdNgKOEI/0.jpg)](https://youtu.be/_NUtdNgKOEI)
+**1. 대시보드 시연 영상**
+
+[![Video Label](http://img.youtube.com/vi/MoZzAdNxTRQ/0.jpg)](https://youtu.be/MoZzAdNxTRQ)
+
+**2. 웹페이지 시연 영상**
+
+[![Video Label](http://img.youtube.com/vi/BOcf5czlMIk/0.jpg)](https://youtu.be/BOcf5czlMIk)
 
 ## 주요 라이브러리
 
@@ -44,4 +57,4 @@ python==3.8.17
 | transformers | 4.36.2 |
 
 ## 기타
-파이토치를 활용한 감성분석 학습 모델은 용량 초과로 인하여 업로드하지 못하였습니다.(electra_best_4.pt)
+파이토치를 활용한 감성분석 학습 모델(KoELECTRA)은 용량 초과로 인하여 업로드하지 못하였습니다.

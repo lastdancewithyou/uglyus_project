@@ -28,11 +28,11 @@
 
 <img width="55%" alt="모델 실험 결과" src="https://github.com/google-research/electra/assets/114273570/9bf06012-cbf9-4472-b5d8-5c16a88fba37">
 
-### 3. 데이터 업로드와 옵션 선택(Daily, Weekly)이 가능한 Main Page
+### 4. 데이터 업로드와 옵션 선택(Daily, Weekly)이 가능한 Main Page
 
 <img width="60%" alt="input" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/e4915b93-4cbc-4155-aa25-4607a052e074">
 
-### 4. 보고서 형태로 분석 결과가 출력되는 Report Page
+### 5. 보고서 형태로 분석 결과가 출력되는 Report Page
 
 <img width="60%" alt="output" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/f58cec0e-93d1-4f6a-9fda-2ce1f21e7efb">
 

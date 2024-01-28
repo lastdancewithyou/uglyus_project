@@ -20,9 +20,11 @@
 ### 1. Workflow
 
 <img width="50%" alt="워크플로우" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/f01e0d5e-a688-4c10-893e-b546015422d8">
-<br/>
 
-### 2. 모델 실험 결과
+### 2. 분석 프로세스
+<img width="50%" alt="분석 프로세스" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/48d6d596-1a87-4b71-856c-a7d589791776">
+
+### 3. 모델 실험 결과
 
 <img width="55%" alt="모델 실험 결과" src="https://github.com/google-research/electra/assets/114273570/9bf06012-cbf9-4472-b5d8-5c16a88fba37">
 

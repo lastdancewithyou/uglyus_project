@@ -19,12 +19,12 @@
 
 ### 1. Workflow
 
-<img width="60%" alt="워크플로우" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/f01e0d5e-a688-4c10-893e-b546015422d8">
+<img width="50%" alt="워크플로우" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/f01e0d5e-a688-4c10-893e-b546015422d8">
 <br/>
 
 ### 2. 모델 실험 결과
 
-<img width="50%" alt="모델 실험 결과" src="https://github.com/google-research/electra/assets/114273570/9bf06012-cbf9-4472-b5d8-5c16a88fba37">
+<img width="55%" alt="모델 실험 결과" src="https://github.com/google-research/electra/assets/114273570/9bf06012-cbf9-4472-b5d8-5c16a88fba37">
 
 ### 3. 데이터 업로드와 옵션 선택(Daily, Weekly)이 가능한 Main Page
 

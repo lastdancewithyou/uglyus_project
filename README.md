@@ -11,25 +11,26 @@
 - 기업의 홍보를 위한 대시보드를 제안, 홈페이지에 임베드하는 방식으로 활용할 수 있도록 대시보드를 제작함 
 
 **2. 어글리어스 리뷰를 활용한 KoELECTRA 기반 감성 분석 모델 구축 및 웹페이지 구현**
-- 파이썬 웹 프레임워크인 Flask를 통해 웹페이지를 구현했다. 모델의 input을 웹페이지 상에서 선택하고, output으로 나온 결과를 html 상에 보고서 형태로 출력된다.
-- 직접 제작한 지수(토픽 감성 지수)를 활용하여 리뷰를 통한 기업 평가 지표를 만듦
-- LDA 토픽 모델링을 수행, 토픽별로 토픽 감성 지수를 파악할 수 있기에 모든 리뷰를 확인하지 않고 해당 토픽의 세부적인 리뷰만 확인하면 됨 -> Customer Service 팀의 업무의 자동화 실천
-- 코딩을 모르는 기업의 마케터, CS팀도 간편한 UI로 구성된 웹페이지에 새로운 데이터를 업로드, 기간을 입력하기만 하면 자연어 기반 AI 분석 서비스를 이용할 수 있다.
+- 파이썬 웹 프레임워크인 Flask를 통해 웹페이지를 구현했다. 모델의 input을 웹페이지 상에서 선택하고, output으로 나온 결과를 html 상에 보고서 형태로 출력됨
+- 직접 제작한 지수(토픽 감성 지수)를 활용하여 리뷰를 통한 기업 평가 지표를 제작함
+- LDA 토픽 모델링을 수행, 토픽별로 토픽 감성 지수를 파악할 수 있기에 모든 리뷰를 확인하지 않고 해당 토픽의 세부적인 리뷰만 확인하면 되기에 작업 프로세스 단축 -> Customer Service 팀의 업무의 자동화 실천
+- 코딩을 모르는 기업의 마케터, CS팀도 간편한 UI로 구성된 웹페이지에 새로운 데이터를 업로드, 기간을 입력하기만 하면 자연어 기반 AI 분석 서비스를 이용할 수 있음
 <br/>
 
-**1. Workflow**
+### 1. Workflow
 
 <img width="60%" alt="워크플로우" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/f01e0d5e-a688-4c10-893e-b546015422d8">
+<br/>
 
-**2. 모델 실험 결과**
+### 2. 모델 실험 결과
 
 <img width="50%" alt="모델 실험 결과" src="https://github.com/google-research/electra/assets/114273570/9bf06012-cbf9-4472-b5d8-5c16a88fba37">
 
-**3. 데이터 업로드와 옵션 선택(Daily, Weekly)이 가능한 Main Page**
+### 3. 데이터 업로드와 옵션 선택(Daily, Weekly)이 가능한 Main Page
 
 <img width="60%" alt="input" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/e4915b93-4cbc-4155-aa25-4607a052e074">
 
-**4. 보고서 형태로 분석 결과가 출력되는 Report Page**
+### 4. 보고서 형태로 분석 결과가 출력되는 Report Page
 
 <img width="60%" alt="output" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/f58cec0e-93d1-4f6a-9fda-2ce1f21e7efb">
 

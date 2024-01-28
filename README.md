@@ -34,6 +34,11 @@
 
 <img width="60%" alt="output" src="https://github.com/lastdancewithyou/uglyus_project/assets/114273570/f58cec0e-93d1-4f6a-9fda-2ce1f21e7efb">
 
+## 대시보드
+대시보드는 twbx 파일의 용량 초과로 인하여 태블로 퍼블릭에 업로드하는 것으로 대체하였습니다.
+
+태블로 퍼블릭 링크 : https://public.tableau.com/views/UglyUsDashboard/sheet0?:language=ko-KR&:display_count=n&:origin=viz_share_link
+
 ## 시연영상
 
 **1. 대시보드 시연 영상**

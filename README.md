@@ -49,6 +49,8 @@
 
 ## 시연 영상
 
+- 화면을 클릭하면 해당 영상의 유튜브 페이지로 이동합니다.
+
 **1. 대시보드 시연 영상**
 
 [![Video Label](http://img.youtube.com/vi/MoZzAdNxTRQ/0.jpg)](https://youtu.be/MoZzAdNxTRQ)

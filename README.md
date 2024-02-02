@@ -41,7 +41,7 @@
 
 태블로 퍼블릭 링크 : https://public.tableau.com/views/UglyUsDashboard/sheet0?:language=ko-KR&:display_count=n&:origin=viz_share_link
 
-## 시연영상
+## 시연 영상
 
 **1. 대시보드 시연 영상**
 
@@ -50,6 +50,10 @@
 **2. 웹페이지 시연 영상**
 
 [![Video Label](http://img.youtube.com/vi/BOcf5czlMIk/0.jpg)](https://youtu.be/BOcf5czlMIk)
+
+## 컨퍼런스 발표 영상
+
+[![Video Label](http://img.youtube.com/vi/HYUYUXvb-LQ/0.jpg)](https://https://youtu.be/HYUYUXvb-LQ)
 
 ## 주요 라이브러리
 

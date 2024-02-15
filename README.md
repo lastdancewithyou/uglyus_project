@@ -61,7 +61,7 @@
 
 ## 컨퍼런스 발표 영상
 
-[![Video Label](http://img.youtube.com/vi/HYUYUXvb-LQ/0.jpg)](https://https://youtu.be/HYUYUXvb-LQ)
+[![Video Label](http://img.youtube.com/vi/HYUYUXvb-LQ/0.jpg)](https://youtu.be/HYUYUXvb-LQ)
 
 ## 주요 라이브러리
 

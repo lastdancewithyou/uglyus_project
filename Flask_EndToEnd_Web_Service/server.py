@@ -103,7 +103,8 @@ class Report:
         self.BATCH_SIZE = 64
         self.EPOCHS = 10
         self.MAX_LEN = 50
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.device = torch.device('mps:0' if torch.backends.mps.is_available() else 'cpu') # Mac
+        # self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') # Windows
 
     def clean_text(self, x):
         emojis = ''.join(emoji.UNICODE_EMOJI.keys())
